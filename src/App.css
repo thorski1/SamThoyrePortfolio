@@ -1,33 +1,139 @@
-.App {
+.header-color {
+  background: rgb(6, 102, 10);  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, rgb(30, 105, 74), rgb(6, 102, 10));  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, rgb(30, 105, 74), rgb(6, 102, 10)); 
+}
+
+.Landing-grid {
+  position: relative;
+  width: 100%;
+  height: 100%;
   text-align: center;
+  background: url(https://images.pexels.com/photos/2553409/pexels-photo-2553409.jpeg?auto=compress&cs=tinysrgb&h=650&w=940) center center no-repeat;
+  background-size: cover;
+  
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.projects-grid {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+}
+
+/* contact page css */
+
+.contact-body {
+  margin: auto;
+  position: fixed;
+  width: 100%;
+  height: 100%;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding-top: 2em;
+}
+
+.contact-grid {
+  text-align: center;
+  justify-content: center;
+  width: 80%;
+  height: 550px;
+  background: white;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.contact-grid h2 {
+  font-family: "Anton", sans-serif;
+}
+
+.contact-grid p {
+  font-family: "Oxygen", sans-serif;
+  font-weight: bold;
+}
+
+.contact-grid hr {
+  border-top: 5px dotted #deeec5;
+  width: 50%;
+  margin: auto;
+}
+
+.contact-list i {
+  font-size: 66px;
+  padding-right: 5rem;
+}
+
+.contact-list i:hover {
+  color: #F85565;
+}
+
+.contact-list a:hover {
+  color: #f85565;
+}
+
+.contact-list a {
+  font-family: "Anton";
+  color: black;
+}
+
+/*Resume page css */
+
+.resume-right-col {
+  background: rgb(6, 102, 10);  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, rgb(30, 105, 74), rgb(6, 102, 10));  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, rgb(30, 105, 74), rgb(6, 102, 10));
+  color: white;
+  padding: 2em;
+}
+
+.avatar-img {
+  height: 250px;
+  padding-top: 5em;
+}
+
+.banner-text {
+  background-color: black;
+  opacity: 0.8;
+  width: 75%;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.banner-text h1 {
+  font-size: 66px;
+  font-weight: bold;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.banner-text hr {
+  border-top: 5px dotted #deeec5;
+  width: 50%;
+  margin: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.banner-text p {
+  color: white;
+  font-size: 20px;
+  padding: 1em;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: auto;
+}
+
+.contact-list i {
+  color: rgb(30, 105, 74);
+  font-size: 3rem;
+  padding-right: 3rem;
+}
+
+.social-links i { 
+  color: rgb(30, 105, 74);
+  font-size: 6rem;
+  padding-bottom: 2rem;
+}
+
+.soft-skills-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
