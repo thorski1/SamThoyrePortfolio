@@ -3,6 +3,7 @@ import './App.css';
 import { Layout, Header, Navigation, Drawer, Content } from "react-mdl";
 import Main from "./components/main";
 import { Link } from "react-router-dom";
+import Landing from './components/landingpage';
 
 class App extends Component {
   render() {
@@ -27,7 +28,9 @@ class App extends Component {
         </Drawer>
         <Content>
             <div className="page-content" />
-            <Main></Main>
+            <Main>
+                <Landing />
+            </Main>
         </Content>
     </Layout>
 </div>
